@@ -1,0 +1,18 @@
+<template>
+  <div class="row">
+    <div class="col-lg-8">
+      <m-form schema.bind="schema" submit.call="submit()" model.bind="formModel">
+        <template replace-part="after">
+          <input class="btn btn-default" type="submit" value="Submit">
+        </template>
+      </m-form>
+    </div>
+    <div class="col-lg-4">
+      <debug model.bind="formModel"></debug>
+    </div>
+  </div>
+
+  <p>
+    <pre if.bind="submitted"><code>${submitted}</code></pre>
+  </p>
+</template>

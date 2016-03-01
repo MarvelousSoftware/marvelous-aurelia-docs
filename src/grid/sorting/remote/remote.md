@@ -1,0 +1,2 @@
+Sorting integrates well with remote binding. With `ASP.NET` and `MarvelousSoftware.Grid.DataSource` package installed only
+the part of data which is needed to be displayed on the screen is being downloaded from the server.

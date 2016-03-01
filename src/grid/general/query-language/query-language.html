@@ -1,0 +1,18 @@
+<template>
+  <m-grid>
+    <data-source read.bind="dataUrl" mode="serverSide"></data-source>
+    <pagination size="15"></pagination>
+    <query-language auto-complete.bind="autoCompleteUrl"></query-language>
+    <sorting></sorting>
+    <columns>
+      <column sortable heading="City" field="Name"></column>
+      <column sortable field="Country"></column>
+      <column sortable heading="Population" field="Population"></column>
+      <column sortable groupable type="boolean" heading="Death Penalty" field="DeathPenalty">
+        ${$row.data.DeathPenalty | yesNoFormat}
+      </column>
+      <column sortable heading="Total Area" field="TotalArea">${$row.data.TotalArea} km²</column>
+      <column sortable groupable type="date" field="Created">${$row.data.Created | dateTimeFormat}</column>
+    </columns>
+  </m-grid>
+</template>

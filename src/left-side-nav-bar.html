@@ -1,0 +1,13 @@
+<template>
+    <ul class="sidebar-nav">
+      <li class="sidebar-group-item" repeat.for="group of groups">
+        <span class="sidebar-group-name">${group}</span>
+        <ul class="sidebar-links">
+          <li class="sidebar-link-item ${row.isActive ? 'active' : ''}" repeat.for="row of groupedRoutes[group]">
+            <a href.bind="row.href" tabindex="100">${row.title}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+</template>
+ 

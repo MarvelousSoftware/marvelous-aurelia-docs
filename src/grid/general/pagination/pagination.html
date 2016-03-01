@@ -1,0 +1,11 @@
+<template>
+  <m-grid>
+    <data-source read.bind="data.getRandom(1000)"></data-source>
+    <pagination size="10" all.bind="[5,10,20,40]"></pagination>
+    <columns>
+      <column heading="Age" field="age">${$row.data.age} years old</column>
+      <column heading="First Name" field="firstName"></column>
+      <column heading="Last Name" field="lastName"></column>
+    </columns>
+  </m-grid>
+</template>

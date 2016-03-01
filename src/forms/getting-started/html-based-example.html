@@ -1,0 +1,12 @@
+<form submit.trigger="submit()">
+  <m-text-input label="First Name" value.bind="model.firstName" type="text"></m-text-input>
+  <m-text-input label="Last Name" value.bind="model.lastName" type="text" visibility.bind="visibility.lastName"></m-text-input>
+  <m-text-input label="Full Name" value.bind="model.fullName" type="text" visibility.bind="visibility.fullName"></m-text-input>
+  <m-number label="Age" value.bind="model.age"></m-number>
+  <m-number label="Amount" value.bind="model.amount" type="decimal"></m-number>
+  <m-select label="Country" value.bind="model.country" items.bind="countries" get-text.call="$item.name" get-value.call="$item.id"
+  default-text="-- select --"></m-select>
+  <m-text-area label="Comment" value.bind="model.comment" rows="4"></m-text-area>
+  <m-checkbox label="Accept terms and conditions" value.bind="model.tsAndCs"></m-checkbox>
+  <button class="btn btn-primary" type="submit">Submit</button>
+</form>

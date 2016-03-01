@@ -1,0 +1,2 @@
+One the advantage of using MarvelousForms over manual forms creation is having easy and yet powerful configuration. 
+This example shows how to create a form with multiple rows and how to react on changes.

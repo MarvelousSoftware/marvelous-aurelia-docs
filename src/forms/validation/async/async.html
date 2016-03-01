@@ -1,0 +1,14 @@
+<template>
+  <div class="row">
+    <div class="col-md-6">
+      <m-form schema.bind="schema" submit.call="submit($context)">
+        <template replace-part="after">
+          <button type="submit" class="btn btn-default">Submit</button>
+        </template>
+      </m-form>
+    </div>
+    <div class="col-md-6" if.bind="submitted">
+      <pre><code>${submitted}</code></pre>
+    </div>
+  </div>
+</template>

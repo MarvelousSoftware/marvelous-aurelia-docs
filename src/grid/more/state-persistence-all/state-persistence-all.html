@@ -1,0 +1,32 @@
+<template>
+
+  <p>
+    <div class="btn-group" role="group">
+      <button class="btn btn-default" click.delegate="save()">Save state</button>
+      <button class="btn btn-default" disabled.bind="!state" click.delegate="load()">Load state</button>
+    </div>
+  </p>
+
+  <m-grid options.bind="gridOptions" m-grid.ref="grid">
+    <data-source read="http://localhost:54328/api/cities" mode="serverSide"></data-source>
+    <grouping></grouping>
+    <filter-row></filter-row>
+    <query-language auto-complete="http://localhost:54328/api/cities/auto-completion"></query-language>
+    <pagination size="10"></pagination>
+    <toolbox></toolbox>
+    <sorting mode="multiple"></sorting>
+    <column-chooser></column-chooser>
+    <columns>
+      <column explicit-id="1" sortable groupable type="string" heading="City" field="Name"></column>
+      <column explicit-id="2" sortable groupable type="string" field="Country"></column>
+      <column explicit-id="3" sortable groupable type="number" heading="Population" field="Population"></column>
+      <column explicit-id="4" sortable groupable type="number" heading="Total Area" field="TotalArea">${$row.data.TotalArea} km²</column>
+      <column explicit-id="5" sortable groupable type="boolean" heading="Death Penalty" field="DeathPenalty">
+        ${$row.data.DeathPenalty | yesNoFormat}
+      </column>
+      <column explicit-id="6" sortable groupable type="date" field="Created">${$row.data.Created | dateTimeFormat}</column>
+    </columns>
+  </m-grid>
+
+  <p class="alert alert-info">Be awere that it is preferable to use "explicit-id" on the column definition in case if state persistence is in use.</p>
+</template>

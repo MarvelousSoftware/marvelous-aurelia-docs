@@ -1,0 +1,10 @@
+<template>
+  <div class="code-preview">
+    <div class="code-sample" repeat.for="file of files">
+      <div class="code-sample-name">${file.name}</div>
+      <div class="code-sample-content">
+        <pre class="reset" data-name="${file.name}"><code class="language-${file.type} hljs" innerHTML.bind="file.text"></code></pre>
+      </div>
+    </div>
+  </div>
+</template>

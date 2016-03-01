@@ -1,0 +1,17 @@
+<template>
+  <p>
+    <button class="btn btn-default" click.delegate="attachComponent()">Attach component</button>
+  </p>
+
+  <m-grid options.bind="gridOptions" m-grid.ref="grid">
+    <data-source read.bind="config.apiUrl('api/people')" mode="serverSide"></data-source>
+    <pagination size="10"></pagination>
+    <refresh side.bind="refreshButtonSide"></refresh>
+    <columns>
+      <column heading="Age" field="Age">${$row.data.age} years old</column>
+      <column heading="First Name" field="FirstName"></column>
+      <column heading="Last Name" field="LastName"></column>
+      <column heading="Place of Residence" field="PlaceOfResidence"></column>
+    </columns>
+  </m-grid>
+</template>

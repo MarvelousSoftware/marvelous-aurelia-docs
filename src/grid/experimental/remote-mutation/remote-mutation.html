@@ -1,0 +1,36 @@
+<template>
+  <div>
+    <div class="col-md-4">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <input class="form-control" value.bind="input.Name" placeholder="Name"/>
+        </div>
+        <div class="form-group">
+          <input class="form-control" value.bind="input.Country" placeholder="Country"/>
+        </div>
+        <div class="form-group">
+          <input class="form-control" value.bind="input.Population" placeholder="Population"/>
+        </div>
+        <div class="form-group">
+          <input class="form-control" value.bind="input.TotalArea" placeholder="Total Area"/>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-default" click.delegate="add()" disabled.bind="adding">
+            Add
+            <i if.bind="adding" class="fa fa-spinner fa-spin"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <m-grid options.bind="gridOptions" m-grid.ref="grid">
+      <pagination size="15"></pagination>
+      <columns>
+        <column heading="City" field="Name"></column>
+        <column field="Country"></column>
+        <column heading="Population" field="Population"></column>
+        <column heading="Total Area" field="TotalArea">${$row.data.TotalArea} km²</column>
+      </columns>
+  </m-grid>
+</template>

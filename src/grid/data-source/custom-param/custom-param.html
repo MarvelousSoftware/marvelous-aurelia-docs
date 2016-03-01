@@ -1,0 +1,18 @@
+<template>
+  <p>
+    <select class="form-control" value.bind="selectedProject">
+      <option repeat.for="project of projects" model.bind="project">${project.Name}</option>
+    </select>
+  </p>
+  <p>
+    <m-grid options.bind="gridOptions" m-grid.ref="grid">
+      <pagination size="12"></pagination>
+      <columns>
+        <column heading="Age" field="Age">${$row.data.Age} years old</column>
+        <column heading="First Name" field="FirstName"></column>
+        <column heading="Last Name" field="LastName"></column>
+        <column heading="Date of Birth" field="DateOfBirth">${$row.data.DateOfBirth | dateFormat}</column>
+      </columns>
+    </m-grid>
+  </p>
+</template>

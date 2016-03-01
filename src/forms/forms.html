@@ -1,0 +1,23 @@
+<template>
+  <require from='../left-side-nav-bar'></require>
+
+  <div id="wrapper">
+
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+      <left-side-nav-bar router.bind="router"></left-side-nav-bar>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+      <div class="container-fluid">
+        <h1 if.bind="pageTitle">${pageTitle}</h1>
+        <router-view></router-view>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+
+</template>

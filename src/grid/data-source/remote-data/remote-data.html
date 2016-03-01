@@ -1,0 +1,11 @@
+<template>
+  <m-grid options.bind="gridOptions">
+      <pagination size="12"></pagination>
+      <columns>
+        <column heading="City" field="Name"></column>
+        <column field="Country"></column>
+        <column heading="Population" field="Population"></column>
+        <column heading="Total Area" field="TotalArea">${$row.data.TotalArea} km²</column>
+      </columns>
+  </m-grid>
+</template>

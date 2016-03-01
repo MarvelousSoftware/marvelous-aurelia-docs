@@ -1,0 +1,15 @@
+<template>
+  <m-grid>
+    <data-source read.bind="data.getRandom(300)"></data-source>
+    <pagination size="10" all.bind="[10,20,50]"></pagination>
+    <grouping></grouping>
+    <sorting></sorting>
+    <columns>
+      <column heading="Age" field="age" width="130px">${$row.data.age} years old</column>
+      <column sortable groupable heading="First Name" field="firstName"></column>
+      <column sortable groupable heading="Last Name" field="lastName"></column>
+      <column sortable groupable heading="Place of Residence" field="placeOfResidence"></column>
+      <column sortable groupable heading="Children" field="children"></column>
+    </columns>
+  </m-grid>
+</template>

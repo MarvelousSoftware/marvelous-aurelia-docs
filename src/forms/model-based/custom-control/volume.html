@@ -1,0 +1,25 @@
+<template>
+  <div class="volume-control form-group">
+    <label>${label} (${internalValue}%)</label>
+    <div class="volume-bar" mousedown.trigger="down($event)" mousemove.trigger="moved($event)">
+      <div class="current" css="width: ${internalValue}%"></div>
+    </div>
+  </div>
+  
+  <style>
+    .volume-control .volume-bar {
+      background-color: #f7f7f7;
+      height: 34px;
+      position: relative;
+      border-radius: 4px;
+    }
+    .volume-control .current {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: #18bc9c;
+      border-radius: 4px;
+    }
+  </style>
+  
+</template>

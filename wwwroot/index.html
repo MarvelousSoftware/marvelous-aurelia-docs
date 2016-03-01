@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvelous.Software</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="thirdPartyLibs/highlightjs/styles/github-gist.css">
+
+  <!-- Favicon generated with http://realfavicongenerator.net -->
+  <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/favicons/manifest.json">
+  <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/favicons/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="MarvelousSoftware">
+  <meta name="application-name" content="MarvelousSoftware">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#32485f">
+</head>
+
+<body aurelia-app="main">
+  <div class="splash">
+    <div class="logo"></div>
+    <i class="fa fa-spinner fa-spin"></i>
+  </div>
+
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script>
+    System.import('aurelia-bootstrapper');
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        var img = new Image();
+        img.onload = function() {
+          var logo = document.querySelector('.splash .logo');
+          var fa = document.querySelector('.splash .fa');
+
+          // setTimeout(function () {
+          //   logo.style.opacity = 1;
+          //   logo.style.height = '270px';
+          // }, 1);
+
+          setTimeout(function () {
+            logo.style.transform = "rotate(360deg)"
+          }, 5000);
+
+          setTimeout(function () {
+            logo.style.transform = "rotate(-360deg)"
+          }, 10000);
+
+          setTimeout(function () {
+            fa.style.opacity = 0.8;
+          }, 2000);
+        }
+        img.src = "images/MainEntryLogo.png";
+      });
+  </script>
+
+  <script src="thirdPartyLibs/highlightjs/highlight.pack.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+using System.Linq;
+using System.Web.Http;
+using MarvelousSoftware.Grid.DataSource;
+
+namespace MarvelousSoftware.Examples.API.Controllers
+{
+    public class CitiesController : ApiController
+    {
+        private static readonly IQueryable<City> _cities = Cities.Get().AsQueryable();
+        
+        [HttpGet]
+        [HttpPost]
+        public DataSourceResult<City> Get()
+        {
+            // ToDataSourceResult is an extension method from MarvelousSoftware.Grid.DataSource package
+            return _cities.OrderByDescending(x => x.Created).ToDataSourceResult();
+        }
+    }
+}

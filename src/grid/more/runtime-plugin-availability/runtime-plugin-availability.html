@@ -1,0 +1,22 @@
+<template>  
+  <p class="alert alert-danger">Experimental feature.</p>
+  
+  <m-grid options.bind="gridOptions" m-grid.ref="grid">
+    <pagination size="10" all.bind="[5,10,20,40]"></pagination>
+    <columns>
+      <column sortable groupable heading="Age" field="age">${$row.data.age} years old</column>
+      <column sortable groupable heading="First Name" field="firstName"></column>
+      <column sortable groupable heading="Last Name" field="lastName"></column>
+    </columns>
+  </m-grid>
+  
+  <div>
+    <ul>
+      <li repeat.for="component of grid.components">
+        ${component.name}
+        <button class="btn btn-default" click.delegate="$parent.enable(component)">Enable</button>
+        <button class="btn btn-default" click.delegate="$parent.disable(component)">Disable</button>
+      </li>
+    </ul>
+  </div>
+</template>

@@ -1,0 +1,21 @@
+using System.Web;
+using MarvelousSoftware.Core.Host.SystemWeb;
+
+namespace MarvelousSoftware.Examples.API
+{
+    public class WebApiApplication : HttpApplication
+    {
+        protected void Application_Start()
+        {
+            // This line allows to use MarvelousSoftware products with SystemWeb
+            // It comes from MarvelousSoftware.Core.Host.SystemWeb package
+            MarvelousSoftwareHost.UseSystemWeb();
+            
+            // If you would like to use MarvelousSoftware products with more modern, Owin based applications
+            // then use MarvelousSoftware.Core.Host.Owin package and place below line in Startup.cs file 
+            // app.UseMarvelousSoftware();
+            
+            //.. rest of app's startup configuration
+        }
+    }
+}

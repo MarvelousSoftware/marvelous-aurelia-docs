@@ -1,0 +1,27 @@
+<template>
+  <p>
+    <form class="form-inline">
+      <div class="form-group">
+        <input class="form-control" value.bind="input.age" placeholder="Age"/>
+      </div>
+      <div class="form-group">
+        <input class="form-control" value.bind="input.firstName" placeholder="First Name"/>
+      </div>
+      <div class="form-group">
+        <input class="form-control" value.bind="input.lastName" placeholder="Last Name"/>
+      </div>
+      <button class="btn btn-default" click.delegate="add()">Add</button>
+    </form>
+  </p>
+
+  <m-grid options.bind="gridOptions" m-grid.ref="grid">
+      <columns>
+        <column heading="Age" field="age" width="130px">${$row.data.age} years old</column>
+        <column heading="First Name" field="firstName"></column>
+        <column heading="Last Name" field="lastName"></column>
+        <column heading="Actions" width="1px">
+          <button class="btn btn-default btn-sm" click.delegate="$parent.viewModel.remove($item)">Remove</button>
+        </column>
+      </columns>
+  </m-grid>
+</template>

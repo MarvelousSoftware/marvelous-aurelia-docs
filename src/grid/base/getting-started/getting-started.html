@@ -1,0 +1,76 @@
+<template>
+  <h1>Getting started</h1>
+  <p>
+    The <code>marvelous-aurelia-grid</code> is an open source, modern and powerful component based on <a href="http://aurelia.io/">aurelia framework</a>.
+    It provides rich set of features such as grouping, state persistance, filtering and many more. It leverages binding syntax
+    to make configuration as easy as possible. Default implementation of remote data source uses .NET's <code>IQueryable</code> interface
+    making integration with <code>ASP.NET</code> sites extremally simple. Under the hood it is built on component driven architecture
+    which makes it easy to extend. It provides local and remote data sources.
+  </p>
+  <p class="alert alert-warning">
+    Please bear in mind that this library is still in the beta and some features (like translations support) might be missing.
+  </p>
+
+  <h3>Installation</h3>
+  <p>
+    <p>To install the library just use jspm:</p>
+    <pre class="highlight"><code>jspm install marvelous-aurelia-grid</code></pre>
+
+    <p>Then it is required to load the css file and let know aurelia about the grid plugin:</p>
+    <pre class="typescript highlight"><code>import 'marvelous-aurelia-grid/styles/default.css!';
+// ...
+
+export function configure(aurelia) {  
+  let config = aurelia.use;
+  
+  config
+    // ...
+    .plugin('marvelous-aurelia-grid');
+  
+  aurelia.start().then(a => {
+    a.setRoot();
+  });
+}
+</code></pre>
+  </p>
+
+  <h3>Options configuration</h3>
+  <p>
+    Each grid needs a configuration. Bare minimum is configured data source and columns. 
+  </p>
+  <p>
+    There are 3 approaches to the configuration:
+    <ul>
+      <li>HTML based</li>
+      <li>Code based</li>
+      <li>Mixed</li>
+    </ul>
+    The decision which one suits you best is up to you.
+  </p>
+  <p>Here is an HTML based example:</p>
+  <m-code language="html" file-path="grid/base/getting-started/configuration-html-based.html"></m-code>
+  <p>Exactly the same configuration with code based approach:</p>
+  <m-code language="typescript" file-path="grid/base/getting-started/configuration-code-based.ts"></m-code>
+  <m-code language="html" file-path="grid/base/getting-started/configuration-code-based.html"></m-code>
+  <p>It is also allowed to mix both of them:</p>
+  <m-code language="typescript" file-path="grid/base/getting-started/configuration-both.ts"></m-code>
+  <m-code language="html" file-path="grid/base/getting-started/configuration-both.html"></m-code>
+  
+  <h3>Browser support</h3>
+  <p>Currently only modern browsers are supported, but IE >= 9 support is on the TODO list.</p>
+
+  <h3>License</h3>
+  <p>
+    GNU General Public License is the only option for now, but commercial license will be available in the future.
+    It will not be free, but price will be really reasonable.
+  </p>
+
+  <h3>Dependencies</h3>
+  <ul>
+    <li>aurelia-binding</li>
+    <li>aurelia-dependency-injection</li>
+    <li>aurelia-templating</li>
+    <li>marvelous-aurelia-core</li>
+    <li>marvelous-aurelia-query-language</li>
+  </ul>
+</template>

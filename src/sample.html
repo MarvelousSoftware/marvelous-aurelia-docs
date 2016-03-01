@@ -1,0 +1,22 @@
+<template>
+  <div if.bind="notFound" class="text-center">
+    <h1>Ooops!</h1>
+    <h2>404 Not Found</h2>
+    <p>Sample has been not found :(</p>
+  </div>
+
+  <div if.bind="!notFound">
+    <div id="sample-page">
+      <h1>${sample.pageTitle}</h1>
+
+      <div class="sample-placeholder"></div>
+
+      <div class="well sample-description" if.bind="description">
+        <h4>Description</h4>
+        <p innerHTML.bind="description"></p>
+      </div>
+
+      <code-preview files.bind="files"></code-preview>
+    </div>
+  </div>
+</template>

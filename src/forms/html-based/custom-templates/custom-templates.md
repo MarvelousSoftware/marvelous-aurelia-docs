@@ -1,0 +1,2 @@
+While it is perfectly fine to use default templates it is not mandatory. This example shows how to change template on per element basis.
+In order to switch templates globaly check out [Configuration](#/forms/getting-started) at getting started section.

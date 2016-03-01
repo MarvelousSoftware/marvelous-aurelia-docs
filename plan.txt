@@ -1,0 +1,22 @@
+TODO:
+  - create NuGet packages
+  - update all aurelia packages
+  
+Once packages are created:
+  - create readme.md files
+  - add dependencies to package.json files
+  - test in sample-navigation project
+  - create automated process for changelog creation
+  - make it available via `jspm install package-name`
+
+Further plans:
+  - check google analitycs statistics
+  - newsletter?
+
+BUGS:
+  Forms:
+    General:
+      - Entering for the first time on "Rows and columns" page results with "Type" field being not tracked for visibility changes. 
+        Looks like an aurelia bug.
+  Query Language:
+    - For some reason "City is not empty" doesn't work on Basic view

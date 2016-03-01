@@ -1,0 +1,15 @@
+<template>
+  <m-grid>
+    <data-source read.bind="data.get"></data-source>
+    <pagination size="12"></pagination>
+    <column-chooser></column-chooser>
+    <sorting></sorting>
+    <columns>
+      <column sortable heading="Age" field="age" width="130px">${$row.data.age} years old</column>
+      <column sortable heading="First Name" field="firstName"></column>
+      <column hidden sortable heading="Last Name" field="lastName"></column>
+      <column hidden sortable heading="Place of Residence" field="placeOfResidence"></column>
+      <column hidden sortable heading="Children" field="children"></column>
+    </columns>
+  </m-grid>
+</template>

@@ -1,0 +1,40 @@
+<template>
+  <p>
+    <m-query-language 
+      options.bind="queryLanguageOptions" 
+      m-query-language.ref="queryLanguage">
+    </m-query-language>    
+  </p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Country</th>
+        <th>Population</th>
+        <th>Density</th>
+        <th>Total Area</th>
+        <th>Death Penalty</th>    
+        <th>Created</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr repeat.for="row of tableRows">
+        <td>${row.Name}</td>
+        <td>${row.Country}</td>
+        <td>${row.Population}</td>
+        <td>${row.PopulationDensity ? row.PopulationDensity + '/km²' : 'unknown'}</td>
+        <td>${row.TotalArea} km²</td>
+        <td>${row.DeathPenalty | yesNoFormat}</td>
+        <td>${row.Created | dateTimeFormat}</td>          
+      </tr>
+    </tbody>
+  </table>
+  <div class="well">
+    <h4>Samples</h4>
+    <ul>
+      <li repeat.for="sample of samples" click.trigger="setQuery(sample)">
+        <a href="">${sample}</a>
+      </li>
+    </ul>
+  </div>
+</template>

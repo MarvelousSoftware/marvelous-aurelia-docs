@@ -1,0 +1,18 @@
+<template>
+  <div class="row">
+    <div class="col-md-6">
+      <div repeat.for="model of models">
+        <compose view-model="./component" model.bind="model" containerless></compose>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div repeat.for="model of models2">
+        <compose view="./component.html" view-model.bind="model" containerless></compose>
+      </div>
+    </div>
+  </div>
+  
+  <sample-component name.bind="test" value.bind="2"></sample-component>  
+  
+  <button class="btn btn-default" click.trigger="change()">Change</button>
+</template>

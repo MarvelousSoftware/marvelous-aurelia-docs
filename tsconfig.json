@@ -1,0 +1,25 @@
+{
+  "version": "1.7.3",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": "src/",
+    "sourceMap": false,
+    "target": "es5",
+    "module": "system",
+    "declaration": false,
+    "noImplicitAny": false,
+    "noResolve": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./typings/**/*.d.ts",
+    "./jspm_packages/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

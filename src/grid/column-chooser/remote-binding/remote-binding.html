@@ -1,0 +1,14 @@
+<template>
+  <m-grid>
+    <data-source read.bind="config.apiUrl('api/cities')" mode="serverSide" get-only-visible-columns></data-source>
+    <pagination size="10"></pagination>
+    <column-chooser></column-chooser>
+    <sorting></sorting>
+    <columns>
+      <column sortable heading="City" field="Name"></column>
+      <column sortable field="Country"></column>
+      <column sortable heading="Population" field="Population"></column>
+      <column hidden sortable heading="Total Area" field="TotalArea">${$row.data.TotalArea} km²</column>
+    </columns>
+  </m-grid>
+</template>

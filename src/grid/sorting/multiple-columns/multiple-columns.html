@@ -1,0 +1,13 @@
+<template>
+  <m-grid>
+    <data-source read.bind="data.getRandom(200)"></data-source>
+    <pagination size="12"></pagination>
+    <sorting mode="multiple"></sorting>
+    <columns>
+      <column sortable heading="Age" field="age" width="130px">${$row.data.age} years old</column>
+      <column sortable heading="First Name" field="firstName"></column>
+      <column sortable heading="Last Name" field="lastName"></column>
+      <column sortable heading="Place of Residence" field="placeOfResidence"></column>
+    </columns>
+  </m-grid>
+</template>

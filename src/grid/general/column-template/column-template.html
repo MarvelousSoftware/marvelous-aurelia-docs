@@ -1,0 +1,14 @@
+<template>
+  <m-grid m-grid.ref="grid">
+    <data-source read.bind="data.get"></data-source>
+    <pagination size="10"></pagination>
+    <columns>
+      <column heading="Age" field="age" width="130px">${$row.data.age} years old</column>
+      <column heading="First Name" field="firstName"></column>
+      <column heading="Last Name" field="lastName"></column>
+      <column heading="Actions" width="1px">
+        <button class="btn btn-default btn-sm" click.delegate="show($row.data)">Show</button>
+      </column>
+    </columns>
+  </m-grid>
+</template>

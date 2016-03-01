@@ -1,0 +1,3 @@
+Sometimes the data is not in the correct format and it should be adjusted as per business requirements. In such case column template is a perfect fit. 
+It allows to display anything in a cell and it has access to `$row` which holds information about current row such as bound data. Besides that it also has an access
+to the view model within which the grid is being declared. In this demo it is presented by `show` method usage which is implemented in `ColumnTemplate` controller.

@@ -1,0 +1,2 @@
+Promises are one of the most important part of modern web applications and therefore MarvelousForms supports it in the validation.
+This makes scenarios like calling server-side for field validation possible.
