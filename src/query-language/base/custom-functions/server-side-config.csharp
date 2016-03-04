@@ -23,7 +23,6 @@ namespace MarvelousSoftware.Examples.API.Controllers
             .AddColumn(x => x.PlaceOfResidence)
             .Functions(config => config.Define(new FunctionDefinition(
                 name: "currentUser", 
-                signature: new FunctionSignature(), 
                 columnType: ColumnType.String, 
                 evaluator: context =>
                 {
