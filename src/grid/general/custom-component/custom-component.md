@@ -32,4 +32,4 @@ Layout is optional. By default it is `full`. Other allowed value is `forEachColu
 column. That is basically how filter row works.
 
 NOTE: If you are interested in more advanced components then have a look at pagination, column chooser or any other existing component.
-You can find it here: TODO: github repo src/grid/components link.
+You can find it here: https://github.com/MarvelousSoftware/marvelous-aurelia-grid/tree/master/src/grid/components.

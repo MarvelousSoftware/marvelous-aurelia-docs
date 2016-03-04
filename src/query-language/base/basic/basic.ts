@@ -10,12 +10,12 @@ export class Basic {
   queryLanguage: QueryLanguage;
   queryLanguageOptions: IQueryLanguageOptions;
   
-  samples = [
-    'Country = "United States"', 
+  samples = [ 
     'Country = China and Population < 4500000', 
     'Country = China and (Population < 4500000 or Density < 1400) and TotalArea > 1000',
     'City starts with S',
-    'Created < 1/1/2016'];
+    'Created < 1/1/2016',
+    'Country = "United States"'];
   
   constructor(http: HttpClient) {
     this.queryLanguageOptions = {

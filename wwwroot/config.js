@@ -39,10 +39,10 @@ System.config({
     "fetch": "github:github/fetch@0.10.1",
     "font-awesome": "npm:font-awesome@4.5.0",
     "marked": "npm:marked@0.3.5",
-    "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@dev",
-    "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@dev",
-    "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@dev",
-    "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@dev",
+    "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0",
+    "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@0.1.0",
+    "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@0.1.0",
+    "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@0.1.0",
     "moment": "npm:moment@2.11.2",
     "systemjs/plugin-json": "github:systemjs/plugin-json@0.1.0",
     "text": "github:systemjs/plugin-text@0.0.4",
@@ -57,6 +57,30 @@ System.config({
     },
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
+    },
+    "github:marveloussoftware/marvelous-aurelia-core@0.1.0": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.1.3",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.3",
+      "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.1"
+    },
+    "github:marveloussoftware/marvelous-aurelia-forms@0.1.0": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.1.3",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.3",
+      "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.1.4",
+      "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.1",
+      "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0"
+    },
+    "github:marveloussoftware/marvelous-aurelia-grid@0.1.0": {
+      "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.1.3",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.3",
+      "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.1",
+      "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0",
+      "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@0.1.0"
+    },
+    "github:marveloussoftware/marvelous-aurelia-query-language@0.1.0": {
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.3",
+      "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.1",
+      "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0"
     },
     "github:miguelzakharia/aurelia-google-analytics@1.0.3": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.3",

@@ -131,16 +131,14 @@ pre.reset {
     width: 710px;
     height: 270px;
     margin: 0 auto;
-    transition: 1s, height 0.5s;
-    //opacity: 0;
+    transition: 1s;
   }
   
   .fa-spinner {
-    text-align: center;
     display: inline-block;
+    text-align: center;
     font-size: 72px;
     margin-top: 80px;
-    transition: 2s;
     opacity: 0;
   }
 }

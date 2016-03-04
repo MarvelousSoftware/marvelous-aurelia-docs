@@ -46,11 +46,6 @@
           var logo = document.querySelector('.splash .logo');
           var fa = document.querySelector('.splash .fa');
 
-          // setTimeout(function () {
-          //   logo.style.opacity = 1;
-          //   logo.style.height = '270px';
-          // }, 1);
-
           setTimeout(function () {
             logo.style.transform = "rotate(360deg)"
           }, 5000);
@@ -60,6 +55,7 @@
           }, 10000);
 
           setTimeout(function () {
+            fa.style.transition = '2s';
             fa.style.opacity = 0.8;
           }, 2000);
         }

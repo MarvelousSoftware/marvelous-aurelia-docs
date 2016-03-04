@@ -1,23 +1,22 @@
 <template>
   <h1>Getting started</h1>
   <p>
-    The <code>marvelous-aurelia-query-language</code> is an open source domain specific language built on top of <code>.NET</code>    platform. It allows to filter data using custom syntax. The goal is to provide advanced users a way to quickly get needed
-    data. It has built-in support for auto completions.
+    The <code>marvelous-aurelia-query-language</code> is an open source domain specific language built on top of <code>.NET</code> platform.
+    The goal is to provide advanced users a way to quickly get needed data. It has built-in support for auto completions.
   </p>
   <p class="alert alert-info">
     Although the code editor is using aurelia framework the further version will provide a separate, independent package.
   </p>
   <p class="alert alert-warning">
-    Please bear in mind that this library is still in the early beta and some features (like functions) might be missing.
+    Please bear in mind that this library is still in the early beta and some features might be missing.
   </p>
 
   <h3>Installation</h3>
   <p>
-    <p>The marvelous-aurelia-query-language consists of 2 packages: client side and server side. To install client side library
-      just use jspm:</p>
+    <p>The <code>marvelous-aurelia-query-language</code> consists of 2 packages: client side and server side. First install client side library:</p>
     <pre class="highlight"><code>jspm install marvelous-aurelia-query-language</code></pre>
 
-    <p>Then it is required to load the css file and let know aurelia about the query language plugin:</p>
+    <p>Then load the css file and let know aurelia about the query language plugin:</p>
     <pre class="typescript highlight"><code>import 'marvelous-aurelia-query-language/styles/default.css!';
 // ...
 
@@ -36,7 +35,7 @@ export function configure(aurelia) {
     <p>To install server side part of the library use following NuGet install command:</p>
     <pre class="highlight"><code>Install-Package MarvelousSoftware.QueryLanguage</code></pre>
     <p>
-      Once you do that it is still needed to install either <code>MarvelousSoftware.Core.Host.Owin</code> or
+      Once you do that install either <code>MarvelousSoftware.Core.Host.Owin</code> or
       <code>MarvelousSoftware.Core.Host.SystemWeb</code> NuGet package and use it on the application start up:
     </p>
     <m-code language="csharp" file-path="query-language/base/getting-started/Global.asax.csharp"></m-code> 
@@ -49,7 +48,7 @@ export function configure(aurelia) {
   <h3>License</h3>
   <p>
     GNU General Public License is the only option for now, but commercial license will be available in the future. It will not
-    be free, but price will be really reasonable.
+    be free, but price will be price will be affordable even for small projects.
   </p>
 
   <h3>Dependencies</h3>
