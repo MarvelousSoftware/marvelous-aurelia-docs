@@ -40,16 +40,6 @@ export function configure(aurelia) {
   <p>In order to change default values use aurelia plugin configuration:</p>
   <m-code language="typescript" file-path="forms/getting-started/aurelia-config.ts"></m-code>
   
-  <h3>HTML Based approach</h3>
-  <p>One of the design decisions was to support not only model based approach, but also HTML based, like in the following example:</p>
-  <m-code language="html" file-path="forms/getting-started/html-based-example.html"></m-code>
-  <p>
-    It has been implemented in the early version, but one of the aurelia updates broke it. Currently aurelia 
-    <a href="https://github.com/aurelia/framework/issues/210#issuecomment-141605960">doesn't support</a>
-    extending custom elements which is a big issue for this particular library. The early version used a trick which apparently is not valid
-    any more. Therefore HTML Based approach will have to wait for extending custom elements support. 
-  </p>
-  
   <h3>Browser support</h3>
   <p>Currently only modern browsers are supported, but IE >= 9 support is on the TODO list.</p>
   
