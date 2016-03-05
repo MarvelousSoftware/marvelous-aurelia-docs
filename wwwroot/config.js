@@ -39,7 +39,7 @@ System.config({
     "font-awesome": "npm:font-awesome@4.5.0",
     "marked": "npm:marked@0.3.5",
     "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0",
-    "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@0.1.0",
+    "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@0.1.1",
     "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@0.1.0",
     "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@0.1.2",
     "moment": "npm:moment@2.11.2",
