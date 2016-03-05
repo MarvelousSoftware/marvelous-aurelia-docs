@@ -27,7 +27,7 @@ export class HttpClientBasedRead {
           // These parameters should come in the query string. `context.url` takes a base URL as a parameter and returns
           // a new URL, readable by backend service (MarvelousSoftware.Grid.DataSource package).
           return http.fetch(context.url(apiUrl), {
-            method: 'POST',
+            method: 'GET'
           }).then(x => x.json());
         }
       }

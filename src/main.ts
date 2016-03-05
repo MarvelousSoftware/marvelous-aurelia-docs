@@ -8,6 +8,7 @@ import 'marvelous-aurelia-query-language/styles/default.css!';
 import 'styles/styles.css!';
 import 'bootstrap';
 import 'font-awesome';
+import 'fetch';
 
 import 'forms/forms';
 import {Samples} from 'samples';

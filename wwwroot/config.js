@@ -12,7 +12,6 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.1.2",
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
@@ -36,7 +35,7 @@ System.config({
     "bootstrap": "github:twbs/bootstrap@3.3.6",
     "core-js": "npm:core-js@2.1.2",
     "css": "github:systemjs/plugin-css@0.1.20",
-    "fetch": "github:github/fetch@0.10.1",
+    "fetch": "github:github/fetch@0.11.0",
     "font-awesome": "npm:font-awesome@4.5.0",
     "marked": "npm:marked@0.3.5",
     "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0",
