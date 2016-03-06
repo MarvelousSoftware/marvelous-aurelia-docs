@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "author": "Damian Kamiński",
   "license": "MIT",
+  "homepage": "http://marvelous.software",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarvelousSoftware/marvelous-aurelia-docs"
+  },
   "devDependencies": {
     "aurelia-bundler": "^0.3.0",
     "aurelia-tools": "^0.1.18",
@@ -70,7 +75,7 @@
       "marked": "npm:marked@^0.3.5",
       "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@^0.1.0",
       "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@^0.1.1",
-      "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@^0.1.0",
+      "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@^0.1.1",
       "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@^0.1.2",
       "moment": "npm:moment@^2.11.2",
       "systemjs/plugin-json": "github:systemjs/plugin-json@^0.1.0",

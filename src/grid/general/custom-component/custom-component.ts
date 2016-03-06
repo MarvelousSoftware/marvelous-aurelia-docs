@@ -13,6 +13,7 @@ export class CustomComponent {
     this.gridOptions = {      
       // adds new component at the top of the grid
       components: [new ComponentRegistration({
+        name: 'top-refresh', // unique name of the component
         type: RefreshComponent,
         view: 'grid/general/custom-component/refresh-component.html',
         position: componentPosition.top,
@@ -24,6 +25,7 @@ export class CustomComponent {
   attachComponent() {
     // adds new component on button click, this time on the bottom of the grid
     this.grid.components.add(new ComponentRegistration({
+      name: 'bottom-refresh',
       type: RefreshComponent,
       view: 'grid/general/custom-component/refresh-component.html',
       position: componentPosition.footer,

@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
 
 // this task utilizes the browsersync plugin
@@ -17,4 +18,9 @@ gulp.task('serve', function(done) {
       }
     }
   }, done);
+});
+
+// helper for bundled version testing
+gulp.task('serve-bundled', function(done) {
+  return runSequence('copy-internal-dependencies', 'bundle', 'serve', done);
 });

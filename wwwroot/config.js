@@ -40,7 +40,7 @@ System.config({
     "marked": "npm:marked@0.3.5",
     "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0",
     "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@0.1.1",
-    "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@0.1.0",
+    "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@0.1.1",
     "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@0.1.2",
     "moment": "npm:moment@2.11.2",
     "systemjs/plugin-json": "github:systemjs/plugin-json@0.1.0",
@@ -62,7 +62,7 @@ System.config({
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.4"
     },
-    "github:marveloussoftware/marvelous-aurelia-forms@0.1.0": {
+    "github:marveloussoftware/marvelous-aurelia-forms@0.1.1": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.1.6",
