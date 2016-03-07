@@ -1,0 +1,26 @@
+<template>
+  <p>
+    <select class="form-control" value.bind="selectedLanguage" change.trigger="selectedLanguageChanged()">
+      <option repeat.for="language of languages" model.bind="language">${language}</option>
+    </select>
+  </p>
+  <p>
+    <m-grid>
+      <data-source read.bind="config.apiUrl('api/cities')" mode="serverSide"></data-source>
+      <grouping></grouping>
+      <filter-row></filter-row>
+      <pagination size="15"></pagination>
+      <sorting></sorting>
+      <columns>
+        <column sortable groupable type="string" heading="City" field="Name"></column>
+        <column sortable groupable type="string" field="Country"></column>
+        <column sortable type="number" nullable="false" heading="Population" field="Population"></column>
+        <column sortable type="number" heading="Total Area" field="TotalArea">${$row.data.TotalArea} km²</column>
+        <column sortable groupable type="boolean" heading="Death Penalty" field="DeathPenalty" width="100px">
+          ${$row.data.DeathPenalty | yesNoFormat}
+        </column>
+        <column sortable type="date" field="Created" width="140px">${$row.data.Created | dateTimeFormat}</column>
+      </columns>
+    </m-grid>
+  </p>
+</template>

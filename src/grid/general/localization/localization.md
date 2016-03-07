@@ -1,0 +1,2 @@
+`MarvelousAureliaGrid` supports localization. By default 2 languages are provided: english and polish. If you need any other then you will need
+to provide custom translations in the grid plugin configuration.

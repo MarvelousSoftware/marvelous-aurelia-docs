@@ -75,6 +75,13 @@ grid.createGroup('General', 'general')
     ]
   })
   .add({
+    title: 'Localization',
+    name: 'localization',
+    files: [
+      { name: 'localization-config.ts', src: 'grid/general/localization/localization-config.ts', type: 'typescript' }
+    ]
+  })
+  .add({
     title: 'Query language',
     name: 'query-language',
     files: [files.config, files.queryLanguageCities, files.globalAsax]

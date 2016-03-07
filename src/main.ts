@@ -1,6 +1,9 @@
 import {LogManager, Aurelia} from 'aurelia-framework';
 import {ConsoleAppender} from 'aurelia-logging-console';
+import {IGridConfig} from 'marvelous-aurelia-grid';
+
 import config from './config';
+
 import 'marvelous-aurelia-grid/styles/default.css!';
 import 'marvelous-aurelia-forms/styles/default.css!';
 import 'marvelous-aurelia-query-language/styles/default.css!';
@@ -28,7 +31,11 @@ export function configure(aurelia: Aurelia) {
     .globalResources('docs/date-time-format')
     .globalResources('docs/yes-no-format')
     .plugin('aurelia-animator-css')
-    .plugin('marvelous-aurelia-grid')
+    .plugin('marvelous-aurelia-grid', (config: IGridConfig) => {
+      config.translations['custom'] = {
+        'grouping/info': 'Just drop a column here'
+      };
+    })
     .plugin('marvelous-aurelia-forms')
     .plugin('marvelous-aurelia-query-language');
 

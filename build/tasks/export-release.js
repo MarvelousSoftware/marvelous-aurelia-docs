@@ -17,6 +17,7 @@ gulp.task('export-copy', function() {
 // use after prepare-release
 gulp.task('export', function(callback) {
   return runSequence(
+    'copy-internal-dependencies',
     'bundle',
     'clean-export',
     'export-copy',
