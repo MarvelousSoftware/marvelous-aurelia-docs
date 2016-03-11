@@ -75,6 +75,10 @@ grid.createGroup('General', 'general')
     ]
   })
   .add({
+    title: 'Selection',
+    name: 'selection'
+  })
+  .add({
     title: 'Localization',
     name: 'localization',
     files: [
