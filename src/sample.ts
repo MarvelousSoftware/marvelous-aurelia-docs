@@ -1,4 +1,4 @@
-import {inject, Aurelia, ViewSlot, customElement, HtmlBehaviorResource, Container, ViewEngine, View} from 'aurelia-framework';
+import {inject, Aurelia, ViewSlot, customElement, HtmlBehaviorResource, Container, ViewEngine, View, ViewResources} from 'aurelia-framework';
 import {metadata} from 'aurelia-metadata';
 import {activationStrategy} from 'aurelia-router';
 import {Sample as S, Samples} from 'samples';
@@ -86,7 +86,7 @@ export class Sample {
     }
   }
 
-  loadSampleResource() {
+  loadSampleResource(): Promise<ViewResources> {
     return this._viewEngine.importViewResources([this.sample.getModuleId()], [this.sample.id], this._aurelia.resources);
   }
 

@@ -41,7 +41,8 @@ export class Samples {
           },
           isActive: false,
           href: sample.href,
-          title: sample.title
+          title: sample.title,
+          labels: sample.labels
         });
       });
     });
@@ -136,6 +137,7 @@ export class Sample {
   files: ICodePreviewFileDefinition[];
   description: boolean;
   group: SampleGroup;
+  labels: string[];
   
   get id() {
     return this.group.directory + '-' + this.name;
@@ -158,6 +160,7 @@ export class Sample {
     
     this.pageTitle = sample.pageTitle || sample.title;
     this.href = sample.href || `#/${sample.group.module.name}/sample/${this.id}`;
+    this.labels = sample.labels || [];
     
     this.files.forEach(x => {
       if(!x.src) {
@@ -190,4 +193,5 @@ export interface ISample {
   href?: string;
   files?: ICodePreviewFileDefinition[];
   description?: boolean;
+  labels?: string[];
 }

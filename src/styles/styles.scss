@@ -49,6 +49,10 @@ h1 {
   font-family: 'Roboto', sans-serif !important;
 }
 
+.label.label-primary {
+  background-color: $base-dark-hover;
+}
+
 pre.reset {
   /* defaults */
   display: block;
@@ -237,8 +241,28 @@ nav-bar .navbar {
           color: #fff;
           background: $base-dark-hover;
         }
+        
+        .sidebar-labels {
+          .label.label-primary {
+            background-color: darken($base-dark-hover, 7%); 
+          }
+        }
       }
       
+      &:hover {
+        .sidebar-labels {
+          .label.label-primary {
+            background-color: lighten($base-dark, 10%); 
+          }
+        }
+      }
+      .sidebar-labels {
+        position: relative;
+        float: right;
+        top: -1px;
+        margin-right: 5px;
+      }
+         
       a {
         display: block;
         text-decoration: none;

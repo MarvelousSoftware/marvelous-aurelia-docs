@@ -76,11 +76,13 @@ grid.createGroup('General', 'general')
   })
   .add({
     title: 'Selection',
-    name: 'selection'
+    name: 'selection',
+    labels: ['new']
   })
   .add({
     title: 'Localization',
     name: 'localization',
+    labels: ['new'],
     files: [
       { name: 'localization-config.ts', src: 'grid/general/localization/localization-config.ts', type: 'typescript' }
     ]
