@@ -12,6 +12,7 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
+
   map: {
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.0-beta.1.1.2",
     "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
@@ -69,7 +70,7 @@ System.config({
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.4",
       "marvelous-aurelia-core": "github:marveloussoftware/marvelous-aurelia-core@0.1.0"
     },
-    "github:marveloussoftware/marvelous-aurelia-grid@0.1.0": {
+    "github:marveloussoftware/marvelous-aurelia-grid@0.1.1": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.2.2",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.1.5",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.1.4",
