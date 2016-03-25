@@ -59,7 +59,7 @@ function getDependencyInfo (name, packageName) {
       },
       {
         src: pkg.marvelous.projects[name] + 'dev/' + packageName + '.d.ts',
-        dest: 'typings/marvelous-software'
+        dest: packagesDirectory + fullPackageName
       }],
     buildSyncFile: pkg.marvelous.projects[name] + 'dev/buildSyncFile.txt'
   }

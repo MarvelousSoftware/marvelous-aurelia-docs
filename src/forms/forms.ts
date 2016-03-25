@@ -8,7 +8,12 @@ module.createGroup('', 'base')
     title: 'Getting started',
     name: 'getting-started',
     href: '#/forms/getting-started'
-  }, false);
+  }, false)
+  .add({
+    title: 'Configuration',
+    name: 'configuration',
+    labels: ['new']
+  });
 
 module.createGroup('Model based', 'model-based')
   .addSimple('Rows and columns', 'rows')
@@ -45,7 +50,7 @@ export class Examples {
 
   configureRouter(config, router) {
     this.routes.push({ route: ['sample/:name'], name: 'sample', moduleId: `../sample`, nav: false, title: 'Sample', sampleModule: 'forms' });
-    this.routes.push({ route: ['getting-started', ''], name: 'getting-started', moduleId: `./getting-started/getting-started`, nav: false, title: 'Getting started' });
+    this.routes.push({ route: ['getting-started', ''], name: 'getting-started', moduleId: `./base/getting-started/getting-started`, nav: false, title: 'Getting started' });
     config.map(this.routes);
 
     let navigation = Samples.instance.createNavigation('forms', router);
