@@ -3,7 +3,7 @@
     <div class="code-sample" repeat.for="file of files">
       <div class="code-sample-name">${file.name}</div>
       <div class="code-sample-content">
-        <pre class="highlight ${file.type} hljs" data-name="${file.name}"><code class="" innerHTML.bind="file.text"></code></pre>
+        <pre class="${file.type} hljs" data-name="${file.name}"><code class="" innerHTML.bind="file.text"></code></pre>
       </div>
     </div>
   </div>
