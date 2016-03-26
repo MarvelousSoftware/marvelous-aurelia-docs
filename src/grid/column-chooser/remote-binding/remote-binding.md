@@ -6,4 +6,4 @@ This demo shows how to use `Column Chooser` with remote binding. What is worth t
 package installed only the part of data which is needed to be displayed on the screen is being downloaded from the server. In case of large number of columns
 that may lead to significant performance improvement.
 
-NOTE: in case if user would like to be able to save applied customizations [state persistance](#/grid/sample/general-state-persistence) might be used.
+NOTE: a common scenario is to let user save customized view. [State persistance](#/grid/sample/general-state-persistence) could be used for that.

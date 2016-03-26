@@ -6,6 +6,13 @@ import {CodePreview} from 'docs/code-preview';
 import {Compiler} from 'marvelous-aurelia-core/compiler';
 import marked from 'marked';
 
+marked.setOptions({
+  highlight: function (code, lang) {
+    let highlight = (<any>window).hljs;
+    return highlight.highlight(lang, code).value;
+  }
+});
+
 @inject(Element, Compiler, Aurelia, ViewEngine)
 export class Sample {
   sample: S;
@@ -51,7 +58,13 @@ export class Sample {
     
     if (this.sample.description) {
       promises.push(this._aurelia.loader.loadText(this.sample.getFilePathWithExtension('md')).then((x: string) => {
-        this.description = marked(x);
+        let html = marked(x);
+        
+        let wrapper = document.createElement('div');
+        wrapper.innerHTML = html;
+        Array.from(wrapper.querySelectorAll('pre')).forEach(p => p.className = "hljs");
+        
+        this.description = wrapper.innerHTML;
       }, () => { }));
     }
     

@@ -1,3 +1,3 @@
 Sometimes predefined field types are not enough. If that is the case then custom one should be created. Thankfully it is not hard and this example is all about showing
-how to archive it. What is nice about custom fields is that only one class is needed and then MarvelousForms is able to render it using both 
+how to archive it. What is nice about custom fields is that only one class is needed and then `MarvelousAureliaForms` is able to render it using both 
 approaches: HTML based and Model based. It is up to field user to pick one which is most suitable.

@@ -49,6 +49,14 @@ h1 {
   font-family: 'Roboto', sans-serif !important;
 }
 
+h2 {
+  border-bottom: #eee solid thin;
+  padding-bottom: 8px !important;
+  margin-bottom: 10px !important;
+  font-size: 25px !important;
+  font-family: 'Roboto', sans-serif !important;
+}
+
 .label.label-primary {
   background-color: $base-dark-hover;
 }
@@ -111,6 +119,11 @@ pre.reset {
   .sample-description {
     margin-top: 50px;
     margin-bottom: 10px;
+    
+    > p {
+      padding: 12px 0px 4px 0px;
+      margin-top: -10px;
+    }
   }
 }
 
@@ -284,30 +297,18 @@ nav-bar .navbar {
 
 // Code preview
 .code-preview {
-  position: relative;
-  margin-top: 50px;
-  margin-left: -45px;
-  margin-right: -45px;
-  
   .code-sample {
-    margin-bottom: 20px;
-    //margin-top: 15px;
-    //box-shadow: #F1F1F1 0 0 30px;
-    
     .code-sample-name {
-      font-family: 'Roboto', sans-serif;
-      background: #18BC9C;
-      border-left: #15A287 solid 15px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      padding: 5px 8px;
+      background-color: #18BC9C;
       color: #fff;
-      padding: 15px 15px;
     }
-    
     pre {
-      margin: 0;
+      border-top: none;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
     }
-    
-    code {
-      font-size: 14px;
-    }
-  }  
+  }
 }

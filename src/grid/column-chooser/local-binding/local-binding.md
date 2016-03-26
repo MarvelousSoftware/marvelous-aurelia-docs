@@ -4,4 +4,4 @@ hidden. Once column is needed user may use drag and drop to get the data.
 
 This demo shows how to use `Column Chooser` with local binding.
 
-NOTE: in case if user would like to be able to save applied customizations [state persistance](#/grid/sample/general-state-persistence) might be used.
+NOTE: a common scenario is to let user save customized view. [State persistance](#/grid/sample/general-state-persistence) could be used for that.

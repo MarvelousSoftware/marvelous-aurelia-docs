@@ -1,3 +1,3 @@
-Easy to setup validation might be the most important feature of MarvelousForms for many projects. Manual forms creation, especially with sophisticated validation, is not trivial
-and error prone. MarvelousForms provides simple, configuration based model, making validation creation a trival task. This page shows usage of predefined validators. 
+Easy to setup validation might be the most important feature of `MarvelousAureliaForms` for many projects. Manual forms creation, especially with sophisticated validation, is not trivial
+and error prone. `MarvelousAureliaForms` provides simple, configuration based model, making validation creation a trival task. This page shows usage of predefined validators. 
 If you're interested in custom validators then you should check out next sections in the documentation.

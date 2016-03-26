@@ -19,7 +19,7 @@ export class Configuration {
     this.schema.config = {
       validation: {
         // by default validation triggers on blur only when form has been submitted at least once
-        // this configuration will result with form being validated on every blur 
+        // this configuration will result with field being validated on every blur 
         shouldValidateOnBlur: () => true
       }
     }

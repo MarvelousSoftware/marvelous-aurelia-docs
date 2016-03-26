@@ -67,14 +67,6 @@ grid.createGroup('General', 'general')
     name: 'state-persistence'
   })
   .add({
-    title: 'Custom component',
-    name: 'custom-component',
-    files: [
-      { name: 'refresh-component.ts', src: 'grid/general/custom-component/refresh-component.ts', type: 'typescript' },
-      { name: 'refresh-component.html', src: 'grid/general/custom-component/refresh-component.html', type: 'html' }
-    ]
-  })
-  .add({
     title: 'Selection',
     name: 'selection',
     labels: ['new']
@@ -91,6 +83,14 @@ grid.createGroup('General', 'general')
     title: 'Query language',
     name: 'query-language',
     files: [files.config, files.queryLanguageCities, files.globalAsax]
+  })
+  .add({
+    title: 'Custom component',
+    name: 'custom-component',
+    files: [
+      { name: 'refresh-component.ts', src: 'grid/general/custom-component/refresh-component.ts', type: 'typescript' },
+      { name: 'refresh-component.html', src: 'grid/general/custom-component/refresh-component.html', type: 'html' }
+    ]
   });
 
 grid.createGroup('Sorting', 'sorting')

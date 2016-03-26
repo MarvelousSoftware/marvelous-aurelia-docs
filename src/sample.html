@@ -11,11 +11,12 @@
 
       <div class="sample-placeholder"></div>
 
-      <div class="well sample-description" if.bind="description">
-        <h4>Description</h4>
+      <div class="sample-description" if.bind="description">
+        <h2>Description</h2>
         <p innerHTML.bind="description"></p>
       </div>
-
+      
+      <h2>Source code</h2>
       <code-preview files.bind="files"></code-preview>
     </div>
   </div>
