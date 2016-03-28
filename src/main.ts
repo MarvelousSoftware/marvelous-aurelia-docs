@@ -6,7 +6,7 @@ import config from './config';
 
 import 'marvelous-aurelia-grid/styles/default.css!';
 import 'marvelous-aurelia-forms/styles/default.css!';
-import 'marvelous-aurelia-query-language/styles/default.css!';
+import 'marvelous-query-language/styles/default.css!';
 
 import 'styles/styles.css!';
 import 'bootstrap';

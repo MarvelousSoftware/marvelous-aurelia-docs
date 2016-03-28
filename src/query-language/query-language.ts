@@ -32,6 +32,23 @@ queryLanguage.createGroup('', 'base')
     files: [
       { name: 'MqlWithFunctionsController.ts', src: 'query-language/base/custom-functions/server-side-config.csharp', type: 'csharp' }
     ]
+  })
+  .add({
+    title: 'Syntax configuration',
+    name: 'syntax-config',
+    description: false,
+    labels: ['new'],
+    files: [
+      { name: 'MqlWithCustomSyntaxController.ts', src: 'query-language/base/syntax-config/server-side-config.csharp', type: 'csharp' }
+    ]
+  })
+  .add({
+    title: 'Aurelia independent',
+    name: 'without-aurelia',
+    labels: ['new'],
+    files: [
+      { name: 'MqlWithCustomSyntaxController.ts', src: 'query-language/base/syntax-config/server-side-config.csharp', type: 'csharp' }
+    ]
   });
 
 

@@ -43,6 +43,7 @@ System.config({
     "marvelous-aurelia-forms": "github:marveloussoftware/marvelous-aurelia-forms@0.1.1",
     "marvelous-aurelia-grid": "github:marveloussoftware/marvelous-aurelia-grid@0.1.1",
     "marvelous-aurelia-query-language": "github:marveloussoftware/marvelous-aurelia-query-language@0.1.2",
+    "marvelous-query-language": "github:marveloussoftware/marvelous-query-language@0.1.0",
     "moment": "npm:moment@2.11.2",
     "systemjs/plugin-json": "github:systemjs/plugin-json@0.1.0",
     "text": "github:systemjs/plugin-text@0.0.4",
